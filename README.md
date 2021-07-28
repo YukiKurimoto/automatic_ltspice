@@ -2,7 +2,7 @@
 LTspiceのバッチ処理や各種処理の自動化
 
 # 使用方法
-テストケースを設定するファイルを`test_case_files/test_case_sample`の形式で`~.py`という名前で作成する
+テストケースを設定するファイルを`test_case_files/test_case_sample`の形式で`~.json`という名前で作成する
 
 ここではテストする.cirファイルの絶対パスとテストケースの辞書を設定する.
 

@@ -11,8 +11,8 @@ def get_peaks(get_value, df):
 
 # 整定後波形解析
 class Standingwave(Test_circuit):
-    def __init__(self, test_file, test_cases):
-        super().__init__(test_file, test_cases)
+    def __init__(self, file_path):
+        super().__init__(file_path)
 
     # 指定した減衰率の閾値(atte_limit)より振幅の変化が一定回数(standing_judge_count)下回った以降のデータをカットする
     def cut_standingwave(self, atte_limit, standing_judge_count=50):
