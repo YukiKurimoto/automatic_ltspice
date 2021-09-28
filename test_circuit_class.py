@@ -87,7 +87,7 @@ class Test_circuit(Circuit):
             set_name = f"{element}={test_case[element]}"
             test_name += set_name
         cir_file = f"{test_file}_{test_name}"
-        self.get_df(cir_file=cir_file, df_name=test_name)
+        self.save_df(cir_file=cir_file)
 
 
     ################################
@@ -105,7 +105,6 @@ class Test_circuit(Circuit):
 
     # テスト結果からdataframeのリストを取得する
     def get_dfs(self, get_value=None):
-        self.dfs = {}
         if get_value is not None:
             self.get_value = get_value
         self.loop_test(self.get_df_test)
