@@ -2,3 +2,4 @@ __pycache__
 test_case_files/*.py
 .ipynb_checkpoints
 test_case_files/*.json
+*.zip
