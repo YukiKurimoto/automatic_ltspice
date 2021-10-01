@@ -145,7 +145,7 @@ class Circuit:
         file_name = cir_file+f"_{test_name}"
         self.save_df(file_name, I_name, test_name)
         self.save_df(file_name, V_name, test_name)
-        self.t_cut(t_cut_time)
+#         self.t_cut(t_cut_time)
         i_df = self.dfs[I_name][test_name]
         v_df = self.dfs[V_name][test_name]
         w_df = pd.merge(v_df, i_df)
